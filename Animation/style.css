@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #a0a0c0;
+  margin-bottom: 40px;
+}
+
+.subtitle code {
+  background: #2d2d4d;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #ffd166;
+}
+
+/* Grid layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: #22223b;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box p {
+  font-size: 13px;
+  color: #a0a0c0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.shape {
+  width: 50px;
+  height: 50px;
+  background: #ff6b6b;
+  border-radius: 12px;
+}
+
+/* Bounce animation */
+.bounce {
+  animation: bounce 1.2s ease-in-out infinite;
+  background: #ff6b6b;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+/* Spin animation */
+.spin {
+  animation: spin 2s linear infinite;
+  background: #4ecdc4;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Pulse animation */
+.pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+  background: #ffd166;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+/* Slide animation */
+.slide {
+  animation: slide 1.8s ease-in-out infinite;
+  background: #a78bfa;
+}
+
+@keyframes slide {
+  0%, 100% { transform: translateX(-30px); }
+  50% { transform: translateX(30px); }
+}
+
+/* Fade animation */
+.fade {
+  animation: fade 1.6s ease-in-out infinite;
+  background: #06d6a0;
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.15; }
+}
+
+/* Shake animation */
+.shake {
+  animation: shake 0.6s ease-in-out infinite;
+  background: #ef476f;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px) rotate(-5deg); }
+  75% { transform: translateX(10px) rotate(5deg); }
+}
+
+/* Loading spinner section */
+.loader-section {
+  margin-top: 70px;
+}
+
+.loader-section h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #2d2d4d;
+  border-top: 6px solid #ff6b6b;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: spin-loader 1s linear infinite;
+}
+
+@keyframes spin-loader {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

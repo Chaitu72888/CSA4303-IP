@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #fdf6ec;
+  color: #2d2d2d;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: linear-gradient(90deg, #ff512f, #f09819);
+  color: #fff;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #fff176;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #fff176;
+}
+
+.login-btn {
+  background: #fff176;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.08);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  padding: 60px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  color: #fff;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+  color: #fff176;
+}
+
+.hero-text p {
+  font-size: 17px;
+  opacity: 0.95;
+}
+
+.search-card {
+  background: #fff;
+  color: #2d2d2d;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  width: 380px;
+}
+
+.search-card h2 {
+  margin-bottom: 20px;
+  color: #f0651a;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #f0651a;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(90deg, #ff512f, #f09819);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.search-btn:hover {
+  opacity: 0.85;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px 50px;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 260px;
+  padding: 30px 20px;
+  border-radius: 16px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card .icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.feature-card h3 {
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.orange { background: linear-gradient(135deg, #ff9966, #ff5e62); }
+.teal   { background: linear-gradient(135deg, #43cea2, #185a9d); }
+.purple { background: linear-gradient(135deg, #834d9b, #d04ed6); }
+.pink   { background: linear-gradient(135deg, #f857a6, #ff5858); }
+
+/* Popular Routes */
+.popular-routes {
+  padding: 60px 50px;
+  background: #fff3e0;
+  text-align: center;
+}
+
+.popular-routes h2 {
+  font-size: 30px;
+  margin-bottom: 35px;
+  color: #d3450f;
+}
+
+.route-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.route-card {
+  background: #fff;
+  width: 260px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.route-card:hover {
+  transform: translateY(-6px);
+}
+
+.route-banner {
+  padding: 18px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.blue   { background: linear-gradient(90deg, #396afc, #2948ff); }
+.orange { background: linear-gradient(90deg, #f7971e, #ffd200); }
+.green  { background: linear-gradient(90deg, #56ab2f, #a8e063); }
+.pink   { background: linear-gradient(90deg, #ff5f6d, #ffc371); }
+
+.route-info {
+  padding: 18px;
+  text-align: left;
+}
+
+.route-info p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.route-info span {
+  font-weight: bold;
+  color: #f0651a;
+  font-size: 17px;
+}
+
+.route-info button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.route-info button:hover {
+  opacity: 0.85;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2d2d2d;
+  color: #fff;
+  font-size: 14px;
+}

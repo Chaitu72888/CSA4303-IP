@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #0f0f1a;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #a0a0c0;
+  margin-bottom: 40px;
+}
+
+.subtitle code {
+  background: #2d2d4d;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #ffd166;
+}
+
+/* Grid layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 180px;
+  padding: 25px 15px;
+  background: #1a1a2e;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #a0a0c0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card code {
+  font-size: 11px;
+  color: #6bd0d2;
+  background: #12121f;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: #ff6b6b;
+
+  /* This is the key line: tell the browser WHAT to animate, HOW LONG, and the easing curve */
+  transition: transform 0.4s ease-in-out;
+}
+
+/* translate */
+.move { background: #ff6b6b; }
+.card:hover .move {
+  transform: translateX(40px);
+}
+
+/* scale */
+.grow { background: #4ecdc4; }
+.card:hover .grow {
+  transform: scale(1.3);
+}
+
+/* rotate */
+.spin { background: #ffd166; }
+.card:hover .spin {
+  transform: rotate(45deg);
+}
+
+/* skew */
+.slant { background: #a78bfa; }
+.card:hover .slant {
+  transform: skew(15deg);
+}
+
+/* combined transform */
+.combo { background: #06d6a0; }
+.card:hover .combo {
+  transform: translateY(-10px) scale(1.15) rotate(8deg);
+}
+
+/* 3D flip card */
+.flip-wrap {
+  width: 80px;
+  height: 60px;
+  background: transparent;
+  perspective: 500px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  backface-visibility: hidden;
+}
+
+.flip-front {
+  background: #ef476f;
+}
+
+.flip-back {
+  background: #118ab2;
+  transform: rotateY(180deg);
+}
+
+/* Button press feedback */
+.button-section {
+  margin-top: 70px;
+}
+
+.button-section h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.press-btn {
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease-out, background 0.3s ease;
+}
+
+.press-btn:hover {
+  background: #ff8787;
+}
+
+.press-btn:active {
+  transform: scale(0.9);
+}
